@@ -1,7 +1,7 @@
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
-import { AccountService } from 'src/account/account.service';
-import { CreateAccountDto } from 'src/account/dto/accout.dto';
-import { Account } from 'src/account/models/account.model';
+import { Account } from './models/account.model';
+import { AccountService } from './account.service';
+import { CreateAccountDto } from './dto/accout.dto';
 
 @Resolver()
 export class AccountResolver {
